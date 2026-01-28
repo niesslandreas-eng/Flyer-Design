@@ -29,7 +29,7 @@ export function Hero() {
             
             <h1 className="text-6xl md:text-8xl font-hand font-bold leading-tight">
               <span className="block text-neon-pink mb-2">Minikünstler</span>
-              <span className="block text-white">aufgepasst!</span>
+              <span className="block text-indigo-600">aufgepasst!</span>
             </h1>
           </div>
 
