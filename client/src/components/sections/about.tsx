@@ -28,13 +28,13 @@ export function About() {
               className="relative group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-neon-pink to-neon-blue rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-70" />
-              <div className="relative bg-background p-2 rounded-2xl border border-white/10 aspect-square flex items-center justify-center overflow-hidden">
-                 {/* Placeholder for Melanie's photo if user uploads one, for now a cute avatar */}
-                 <div className="w-full h-full bg-zinc-800 rounded-xl flex items-center justify-center flex-col gap-4">
-                    <User size={80} className="text-white/20" />
-                    <p className="text-white/40 font-hand text-xl">Hier könnte dein Foto stehen!</p>
-                 </div>
-              </div>
+<div className="relative bg-background p-2 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
+  <img 
+    src="/melanie-portrait.jpg" 
+    alt="Melanie" 
+    className="w-full h-full object-contain rounded-xl"
+  />
+</div>
             </motion.div>
 
             <motion.div 

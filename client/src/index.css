@@ -34,7 +34,8 @@
 
 :root {
   /* Dark chalkboard theme by default */
-  --background: 240 10% 4%; /* Very dark grey/black */
+  /*--background: 188 100% 100%; /* Very dark grey/black */
+  --background: 154 52% 4%; /* Very dark grey/black */
   --foreground: 0 0% 98%;
 
   --card: 240 10% 6%;

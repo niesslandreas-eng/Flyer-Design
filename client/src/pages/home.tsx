@@ -6,14 +6,16 @@ import { Contact } from "@/components/sections/contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Details />
-        <Contact />
-      </main>
+    <div className="min-h-screen bg-background text-foreground font-sans flex justify-center">
+      <div className="w-full max-w-screen-2xl">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Details />
+          <Contact />
+        </main>
+      </div>
     </div>
   );
 }
