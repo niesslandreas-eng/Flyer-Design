@@ -11,13 +11,24 @@ const infoCards = [
   {
     icon: <Calendar className="w-8 h-8 text-neon-yellow" />,
     title: "Wann?",
-    content: "Montag Nachmittags",
+       content: (
+      <>
+        Montags Nachmittags<br />
+        14:15 Uhr - 15:15 Uhr &<br />
+        15:30 Uhr - 17:00 Uhr
+      </>
+    ),
     color: "border-neon-yellow"
   },
   {
     icon: <MapPin className="w-8 h-8 text-neon-pink" />,
     title: "Wo?",
-    content: "Mönsheim",
+     content: (
+      <>
+        Mönsheim<br />
+        Langer Graben 22
+      </>
+    ),
     color: "border-neon-pink"
   },
   {

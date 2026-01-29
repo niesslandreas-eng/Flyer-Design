@@ -18,7 +18,7 @@ export function Navbar() {
               <Palette className="w-5 h-5 text-white" />
             </div>
             <span className="font-hand font-bold text-xl md:text-2xl text-white">
-              Mellas <span className="text-neon-pink">Kreativwerkstatt</span>
+              Mella's <span className="text-neon-pink">Kreativwerkstatt</span>
             </span>
           </a>
         </Link>
