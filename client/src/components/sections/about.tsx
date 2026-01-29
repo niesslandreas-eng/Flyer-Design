@@ -30,7 +30,7 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-neon-pink to-neon-blue rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-70" />
 <div className="relative bg-background p-2 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
   <img 
-    src="/melanie-portrait.jpg" 
+    src={`${import.meta.env.BASE_URL}melanie-portrait.jpg`} 
     alt="Melanie" 
     className="w-full h-full object-contain rounded-xl"
   />
