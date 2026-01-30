@@ -64,9 +64,7 @@ export function Contact() {
   <p className="text-muted-foreground">
     Lasst uns gemeinsam kreativ werden und Spaß haben.
   </p>
-  <div className="text-sm text-muted-foreground pt-8 border-t border-white/5">
-    &copy; {new Date().getFullYear()} Mellas Kreativwerkstatt.
-  </div>
+  
 </motion.a>
           
           </div>
@@ -79,8 +77,11 @@ export function Contact() {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-lg font-bold rounded-full hover:bg-white/20 transition-colors inline-flex items-center gap-2"
             >
-  Impressum & Datenschutz
-</motion.button>
+                Impressum & Datenschutz
+            </motion.button>
+            <div className="text-sm text-muted-foreground pt-8 border-t border-white/5">
+               &copy; {new Date().getFullYear()} Mella's Kreativwerkstatt.
+            </div>
           </div>
         </div>
       </footer>
@@ -89,6 +90,7 @@ export function Contact() {
       <LegalModal 
         isOpen={isLegalModalOpen} 
         onClose={() => setIsLegalModalOpen(false)} 
+        
       />
     </>
   );
