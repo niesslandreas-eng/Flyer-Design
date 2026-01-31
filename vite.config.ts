@@ -6,7 +6,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
 export default defineConfig({
-   base:'/Flyer-Design/', // Dein Repository-Name
+   base:'./', // Dein Repository-Name
   plugins: [
     react(),
     runtimeErrorOverlay(),
