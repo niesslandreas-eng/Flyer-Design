@@ -20,7 +20,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router base="./">
+        <Router base="/">
           <AppRouter />
         </Router>
       </TooltipProvider>
