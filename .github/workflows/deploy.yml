@@ -23,12 +23,10 @@ jobs:
         run: |
           npm ci
           npm run build
-        env:
-          VITE_BASE_PATH: /
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/public
-          destination_dir: .  # ← HINZUFÜGEN: Deployed direkt in Root
+          
