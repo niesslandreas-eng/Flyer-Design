@@ -11,7 +11,7 @@ const infoCards = [
   {
     icon: <Calendar className="w-8 h-8 text-neon-yellow" />,
     title: "Wann?",
-       content: (
+    content: (
       <>
         Montags Nachmittags<br />
         14:15 Uhr - 15:15 Uhr &<br />
@@ -23,7 +23,7 @@ const infoCards = [
   {
     icon: <MapPin className="w-8 h-8 text-neon-pink" />,
     title: "Wo?",
-     content: (
+    content: (
       <>
         Mönsheim<br />
         Langer Graben 22
@@ -61,7 +61,7 @@ export function Details() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className={`bg-card p-6 rounded-2xl border-b-4 ${card.color} hover:bg-white/5 transition-colors`}
+              className={`bg-card p-6 rounded-2xl border-b-4 ${card.color} hover:bg-white/5 transition-colors flex flex-col items-center text-center`}
             >
               <div className="mb-4">{card.icon}</div>
               <h3 className="text-2xl font-bold mb-3 font-hand">{card.title}</h3>
@@ -71,14 +71,14 @@ export function Details() {
         </div>
 
         <div className="mt-20 p-8 bg-gradient-to-r from-neon-pink/20 to-neon-blue/20 rounded-3xl border border-white/10 text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/splatter-bg.png')] opacity-10 bg-cover bg-center" />
-            <div className="relative z-10">
-                <h3 className="text-3xl font-hand mb-4">Neugierig geworden?</h3>
-                <p className="text-xl max-w-2xl mx-auto mb-8">
-                    Melde dich gerne für eine <span className="text-neon-pink font-bold">kostenlose Probestunde</span> an, 
-                    danach kannst du entscheiden ob du regelmäßig kommen möchtest.
-                </p>
-            </div>
+          <div className="absolute inset-0 bg-[url('/splatter-bg.png')] opacity-10 bg-cover bg-center" />
+          <div className="relative z-10">
+            <h3 className="text-3xl font-hand mb-4">Neugierig geworden?</h3>
+            <p className="text-xl max-w-2xl mx-auto mb-8">
+              Melde dich gerne für eine <span className="text-neon-pink font-bold">kostenlose Probestunde</span> an, 
+              danach kannst du entscheiden ob du regelmäßig kommen möchtest.
+            </p>
+          </div>
         </div>
       </div>
     </section>

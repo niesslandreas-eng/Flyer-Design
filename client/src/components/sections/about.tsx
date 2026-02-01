@@ -1,7 +1,34 @@
 import { motion } from "framer-motion";
-import { User, Heart, Smile } from "lucide-react";
+import { User, Heart, Smile, Star } from "lucide-react"; // Star als Beispiel für 4. Icon
 
 export function About() {
+  const aboutCards = [
+    {
+      icon: <Heart className="text-neon-pink w-6 h-6 mb-2" />,
+      title: "Leidenschaft",
+      content: "Kreatives Arbeiten mit Herz",
+      border: "hover:border-neon-pink/50",
+    },
+    {
+      icon: <Smile className="text-neon-yellow w-6 h-6 mb-2" />,
+      title: "Freude",
+      content: "Spaß steht an erster Stelle",
+      border: "hover:border-neon-yellow/50",
+    },
+    {
+      icon: <User className="text-neon-blue w-6 h-6 mb-2" />,
+      title: "Kompetenz",
+      content: "Professionelle Erfahrung in der Kinderbetreuung",
+      border: "hover:border-neon-blue/50",
+    },
+    {
+      icon: <Star className="text-neon-green w-6 h-6 mb-2" />,
+      title: "Kreativität",
+      content: "Immer neue Ideen und Inspirationen",
+      border: "hover:border-neon-green/50",
+    },
+  ];
+
   return (
     <section id="about" className="py-20 bg-card/50 relative overflow-hidden">
       {/* Decorative blobs */}
@@ -10,7 +37,7 @@ export function About() {
 
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -21,23 +48,25 @@ export function About() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            {/* Portrait */}
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="relative group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-neon-pink to-neon-blue rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-70" />
-<div className="relative bg-background p-2 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
-  <img 
-    src={`${import.meta.env.BASE_URL}melanie-portrait.jpg`} 
-    alt="Melanie" 
-    className="w-full h-full object-contain rounded-xl"
-  />
-</div>
+              <div className="relative bg-background p-2 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}melanie-portrait.jpg`}
+                  alt="Melanie"
+                  className="w-full h-full object-contain rounded-xl"
+                />
+              </div>
             </motion.div>
 
-            <motion.div 
+            {/* Text + Cards */}
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -47,22 +76,23 @@ export function About() {
                 Ich bin <span className="text-neon-pink font-bold">Melanie</span>, 
                 25 Jahre jung, staatlich anerkannte Erzieherin.
               </p>
-              
+
               <p className="text-muted-foreground leading-relaxed">
                 Ich möchte dir die Möglichkeit geben, Deine Kreativität zu entdecken und zu entwickeln – mit ganz viel <span className="font-hand text-2xl text-neon-blue inline-block rotate-3">Spaß!</span>
               </p>
 
+              {/* Cards Grid */}
               <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="bg-background/50 p-4 rounded-xl border border-white/5 hover:border-neon-pink/50 transition-colors">
-                  <Heart className="text-neon-pink mb-2" />
-                  <h4 className="font-bold mb-1">Leidenschaft</h4>
-                  <p className="text-sm text-muted-foreground">Kreatives Arbeiten mit Herz</p>
-                </div>
-                <div className="bg-background/50 p-4 rounded-xl border border-white/5 hover:border-neon-yellow/50 transition-colors">
-                  <Smile className="text-neon-yellow mb-2" />
-                  <h4 className="font-bold mb-1">Freude</h4>
-                  <p className="text-sm text-muted-foreground">Spaß steht an erster Stelle</p>
-                </div>
+                {aboutCards.map((card, index) => (
+                  <div
+                    key={index}
+                    className={`bg-background/50 p-4 rounded-xl border border-white/5 ${card.border} transition-colors flex flex-col items-center text-center`}
+                  >
+                    {card.icon}
+                    <h4 className="font-bold mb-1">{card.title}</h4>
+                    <p className="text-sm text-muted-foreground">{card.content}</p>
+                  </div>
+                ))}
               </div>
             </motion.div>
           </div>
