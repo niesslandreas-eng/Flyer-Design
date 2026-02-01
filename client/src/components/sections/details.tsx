@@ -71,7 +71,7 @@ export function Details() {
         </div>
 
         <div className="mt-20 p-8 bg-gradient-to-r from-neon-pink/20 to-neon-blue/20 rounded-3xl border border-white/10 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/splatter-bg.png')] opacity-10 bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/splatter-bg.jpg')] opacity-10 bg-cover bg-center" />
           <div className="relative z-10">
             <h3 className="text-3xl font-hand mb-4">Neugierig geworden?</h3>
             <p className="text-xl max-w-2xl mx-auto mb-8">

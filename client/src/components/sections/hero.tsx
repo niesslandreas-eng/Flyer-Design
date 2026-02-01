@@ -7,7 +7,7 @@ export function Hero() {
       {/* Background with overlay */}
       <div 
         className="absolute inset-0 z-0 opacity-40 bg-cover bg-center"
-                style={{ backgroundImage: `url('${import.meta.env.BASE_URL}splatter-bg.png')` }}
+                style={{ backgroundImage: `url('${import.meta.env.BASE_URL}splatter-bg.jpg')` }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/30 via-background/80 to-background" />
 
