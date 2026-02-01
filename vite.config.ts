@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     // ✅ relative Pfade für GitHub Pages
-    base: "./",
+    base: "/",
 
     // ✅ Root deiner App
     root: path.resolve(import.meta.dirname, "client"),
