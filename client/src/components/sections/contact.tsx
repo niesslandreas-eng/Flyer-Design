@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Phone, Instagram, Send } from "lucide-react";
 import { useState } from "react";
-import { LegalModal } from "./LegalModal";
+import { Link } from "wouter"; // Vergiss nicht, diesen Import ganz oben hinzuzufügen
 
 
 export function Contact() {
-  const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
+  
 
   return (
     <>
@@ -70,28 +70,27 @@ export function Contact() {
           </div>
 
           {/* Legal Button am Ende des Footers */}
-            <div className="mt-12 pt-8 border-t border-white/10 text-center">
-            <motion.button
-              onClick={() => setIsLegalModalOpen(true)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-lg font-bold rounded-full hover:bg-white/20 transition-colors inline-flex items-center gap-2"
-            >
-                Impressum & Datenschutz
-            </motion.button>
-            <div className="text-sm text-muted-foreground pt-8 border-t border-white/5">
-               &copy; {new Date().getFullYear()} Mella's Kreativwerkstatt.
-            </div>
-          </div>
-        </div>
-      </footer>
+    <div className="mt-12 pt-8 border-t border-white/10 text-center">
+      <Link href="/Impressum_Datenschutz">
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-lg font-bold rounded-full hover:bg-white/20 transition-colors inline-flex items-center gap-2 cursor-pointer"
+        >
+          Impressum & Datenschutz
+        </motion.a>
+      </Link>
+      
+      <div className="text-sm text-muted-foreground pt-8 border-t border-white/5 mt-8">
+        &copy; {new Date().getFullYear()} Mella's Kreativwerkstatt.
+      </div>
+    </div>
+  </div>
+</footer>
 
-      {/* Legal Modal */}
-      <LegalModal 
-        isOpen={isLegalModalOpen} 
-        onClose={() => setIsLegalModalOpen(false)} 
-        
-      />
+
+
+      
     </>
   );
 }
