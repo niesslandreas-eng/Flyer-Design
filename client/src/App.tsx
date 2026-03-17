@@ -17,7 +17,7 @@ function AppRouter() {
       {/* Diese Route ist nur über den direkten Link/QR-Code erreichbar.
           Da sie nirgendwo verlinkt ist, bleibt sie für normale Nutzer unsichtbar.
       */}
-      <Route path="/exklusiv" component={QrSpecial} />
+      <Route path="/Einverstaendniserklaerung" component={QrSpecial} />
       <Route path="/Impressum_Datenschutz" component={LegalPage} /> 
 
       {/* Fallback für alle anderen URLs */}
