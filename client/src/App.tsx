@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
-// Hier die neue Seite importieren (Erstelle die Datei in src/pages/Einverstaendniserklaerung.tsx)
-import QrSpecial from "@/pages/Einverstaendniserklaerung";
+// Hier die neue Seite importieren (Erstelle die Datei in src/pages/consent.tsx)
+import QrSpecial from "@/pages/consent";
 import LegalPage from "@/pages/Impressum_Datenschutz";
 
 function AppRouter() {
@@ -17,7 +17,7 @@ function AppRouter() {
       {/* Diese Route ist nur über den direkten Link/QR-Code erreichbar.
           Da sie nirgendwo verlinkt ist, bleibt sie für normale Nutzer unsichtbar.
       */}
-      <Route path="/Einverstaendniserklaerung" component={QrSpecial} />
+      <Route path="/consent" component={QrSpecial} />
       <Route path="/Impressum_Datenschutz" component={LegalPage} /> 
 
       {/* Fallback für alle anderen URLs */}
