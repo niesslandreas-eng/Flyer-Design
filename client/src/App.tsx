@@ -9,6 +9,8 @@ import NotFound from "@/pages/not-found";
 // Hier die neue Seite importieren (Erstelle die Datei in src/pages/consent.tsx)
 import QrSpecial from "@/pages/consent";
 import LegalPage from "@/pages/Impressum_Datenschutz";
+import kids from "@/pages/kidsregistration";
+
 
 function AppRouter() {
   return (
@@ -19,6 +21,8 @@ function AppRouter() {
           Da sie nirgendwo verlinkt ist, bleibt sie für normale Nutzer unsichtbar.
       */}
       <Route path="/consent" component={QrSpecial} />
+      <Route path="/kidsregistration" component={kids} />
+      
       <Route path="/Impressum_Datenschutz" component={LegalPage} /> 
 
       {/* Fallback für alle anderen URLs */}
