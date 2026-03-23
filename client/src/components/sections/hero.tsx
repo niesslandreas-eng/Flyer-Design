@@ -37,26 +37,7 @@ export function Hero() {
             Mellas Kreativwerkstatt – ab Februar in <span className="text-neon-blue font-bold">Mönsheim</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            <motion.a 
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-neon-pink text-white text-lg font-bold rounded-full shadow-[0_0_20px_rgba(255,0,204,0.4)] hover:shadow-[0_0_30px_rgba(255,0,204,0.6)] transition-shadow flex items-center gap-2"
-            >
-              <Palette size={20} />
-              Kostenlose Probestunde
-            </motion.a>
-            <motion.a 
-              href="#details"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-lg font-bold rounded-full hover:bg-white/20 transition-colors flex items-center gap-2"
-            >
-              <Scissors size={20} />
-              Mehr Infos
-            </motion.a>
-          </div>
+          
 
           <motion.div 
             initial={{ opacity: 0 }}
