@@ -45,8 +45,8 @@ export function Hero() {
             transition={{ delay: 1 }}
             className="pt-12"
           >
-            <p className="font-hand text-2xl text-neon-green rotate-hover inline-block cursor-default">
-              Ab dem 09.02.2026 geht es los! 🚀
+            <p className="font-hand text-6xl text-neon-green rotate-hover inline-block cursor-default">
+              Wir sind gestartet! 🚀
             </p>
           </motion.div>
         </motion.div>
