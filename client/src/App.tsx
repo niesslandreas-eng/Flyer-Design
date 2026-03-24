@@ -10,7 +10,7 @@ import NotFound from "@/pages/not-found";
 import QrSpecial from "@/pages/consent";
 import LegalPage from "@/pages/Impressum_Datenschutz";
 import kids from "@/pages/kidsregistration";
-
+import adult from "@/pages/adultregistration";
 
 function AppRouter() {
   return (
@@ -22,7 +22,7 @@ function AppRouter() {
       */}
       <Route path="/consent" component={QrSpecial} />
       <Route path="/kidsregistration" component={kids} />
-      
+      <Route path="/adultregistration" component={adult} />
       <Route path="/Impressum_Datenschutz" component={LegalPage} /> 
 
       {/* Fallback für alle anderen URLs */}
