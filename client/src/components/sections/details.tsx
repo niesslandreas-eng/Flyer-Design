@@ -5,7 +5,12 @@ const infoCards = [
   {
     icon: <Users className="w-8 h-8 text-neon-blue" />,
     title: "Wer?",
-    content: "Für alle Grund- und Vorschüler die gerne kreativ sind und Lust haben etwas Neues auszuprobieren.",
+    content: (
+      <>
+      Für alle Grund- und Vorschüler die gerne kreativ sind und Lust haben etwas Neues auszuprobieren.<br/>
+      <u className="text-neon-green"><strong>NEU:</strong></u> Jetzt auch für Kinder in Begleitung und Erwachsene!
+      </>
+    ),
     color: "border-neon-blue"
   },
   {
@@ -14,8 +19,8 @@ const infoCards = [
     content: (
       <>
         Montags Nachmittags<br />
-        14:15 Uhr - 15:15 Uhr KIDS<br />
-        15:30 Uhr - 17:00 Uhr KIDS+<br />
+        14:15 Uhr - 15:15 Uhr KIDS<br/>
+        15:30 Uhr - 17:00 Uhr KIDS+<br/>
         ab 18.00 Uhr (Erwachsene)
 
       </>
@@ -27,8 +32,9 @@ const infoCards = [
     title: "Wo?",
     content: (
       <>
-        Mönsheim<br />
-        Langer Graben 22
+        71297 Mönsheim<br />
+        Langer Graben 22<br />
+        <a href="https://maps.app.goo.gl/G5V6pFwBBYY9Ltq96" style={{ color: "blue", textDecoration: "underline" }} target="_blank">Anfahrt</a>
       </>
     ),
     color: "border-neon-pink"
@@ -36,7 +42,7 @@ const infoCards = [
   {
     icon: <Paintbrush className="w-8 h-8 text-neon-green" />,
     title: "Was?",
-    content: "Kreative Mal- und Bastelangebote",
+    content: "Kreative Mal- und Bastelangebote für Groß und Klein, um gemeinsam Spaß zu haben und die Kreativität zu fördern.",
     color: "border-neon-green"
   }
 ];
