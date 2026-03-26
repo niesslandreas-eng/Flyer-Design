@@ -14,8 +14,10 @@ const infoCards = [
     content: (
       <>
         Montags Nachmittags<br />
-        14:15 Uhr - 15:15 Uhr &<br />
-        15:30 Uhr - 17:00 Uhr
+        14:15 Uhr - 15:15 Uhr KIDS<br />
+        15:30 Uhr - 17:00 Uhr KIDS+<br />
+        ab 18.00 Uhr (Erwachsene)
+
       </>
     ),
     color: "border-neon-yellow"
